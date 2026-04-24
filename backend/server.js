@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // 🔗 Connexion MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/tshirtDB");
+mongoose.connect("mongodb://localhost:27017/tshirt_db");
 
 // 📦 MODELS
 const User = mongoose.model("User", {

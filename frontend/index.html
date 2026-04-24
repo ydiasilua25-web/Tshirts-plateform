@@ -5,22 +5,46 @@
   <title>Connexion</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center h-screen">
+<body class="bg-gray-100 flex flex-col min-h-screen ">
 
-  <div class="bg-white p-8 rounded-xl shadow-md w-96">
-    <h2 class="text-2xl font-bold mb-6 text-center">Connexion Agent</h2>
+    <header class="w-full bg-white shadow ">
+        
+        <div class="flex justify-between items-center px-8 py-4">
+          <h1 class="text-2xl font-bold">T-shirts</h1>
+          <nav>
+            <ul class="flex space-x-6 text-white font-semibold">
+                <li class="bg-green-500 rounded-full py-2 px-6">
+                    <a href="#">Acceuil</a>
+                </li>
+                <li class="bg-green-500 rounded-full py-2 px-6">
+                    <a href="#">Apropos</a>
+                </li>
+                <li class="bg-green-500 rounded-full py-2 px-6">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
 
-    <input type="text" placeholder="Email ou Téléphone"
-      class="w-full mb-4 p-2 border rounded-lg">
+    <main class="flex-grow flex items-center justify-center ">
 
-    <input type="password" placeholder="Mot de passe"
-      class="w-full mb-4 p-2 border rounded-lg">
+      <div class="bg-white p-8 rounded-xl shadow-md w-96">
+          <h2 class="text-2xl font-bold mb-6 text-center">Connexion Agent</h2>
 
-    <button class="w-full bg-green-500 text-white p-2 rounded-lg hover:bg-green-600">
-        <a href="">Se connecter</a> 
+          <input type="text" placeholder="Email ou Téléphone"
+            class="w-full mb-4 p-2 border rounded-lg">
+
+          <input type="password" placeholder="Mot de passe"
+            class="w-full mb-4 p-2 border rounded-lg">
+
+          <button class="w-full bg-green-500 text-white p-2 rounded-lg hover:bg-green-600">
+            <a href="">Se connecter</a> 
     
-    </button>
-  </div>
+          </button>
+      </div>
+
+    </main>  
 
 </body>
 </html>
